@@ -3,7 +3,7 @@ using UnitySceneManager = UnityEngine.SceneManagement.SceneManager;
 
 namespace Ulma
 {
-    public static class RutimeInitializer
+    public static class RuntimeInitializer
     {
         private const string ResidentSceneName = "Resident";
 
