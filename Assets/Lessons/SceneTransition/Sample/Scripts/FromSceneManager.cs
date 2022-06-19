@@ -1,17 +1,6 @@
 using UnityEngine;
 using Ulma;
 
-public class MyShareData : SceneManager.ShareData
-{
-    public string Message { get; private set; }
-
-    public MyShareData(string message)
-    {
-        Message = message;
-    }
-}
-
-
 public class FromSceneManager : MonoBehaviour
 {
     private void Start()
@@ -20,7 +9,7 @@ public class FromSceneManager : MonoBehaviour
 
         if (shareData != null)
         {
-            Debug.Log(shareData.Message);
+            Debug.Log(shareData.Status.HP);
         }
     }
 
@@ -28,7 +17,8 @@ public class FromSceneManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.Instance.LoadStage(StageType.Game, new MyShareData("Hello, ToScene!"));
+            var player = FindObjectOfType<FumiController>();
+            SceneManager.Instance.LoadStage(StageType.Game, new MyShareData(player.Status, new Vector3(0, 0, 0)));
         }
     }
 }

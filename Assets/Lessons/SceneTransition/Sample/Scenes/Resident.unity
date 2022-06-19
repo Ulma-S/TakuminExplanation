@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.37311953, g: 0.38074014, b: 0.3587274, a: 1}
+  m_IndirectSpecularColor: {r: 0.44657898, g: 0.4964133, b: 0.5748178, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -130,6 +130,22 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 395542625284907152, guid: 980bd3c8fc2e56044b00795ad40fc326, type: 3}
+      propertyPath: _SceneSets.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 395542625284907152, guid: 980bd3c8fc2e56044b00795ad40fc326, type: 3}
+      propertyPath: _SceneSets.Array.data[2].StageType
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 395542625284907152, guid: 980bd3c8fc2e56044b00795ad40fc326, type: 3}
+      propertyPath: _SceneSets.Array.data[2].SceneNameList.Array.size
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 395542625284907152, guid: 980bd3c8fc2e56044b00795ad40fc326, type: 3}
+      propertyPath: _SceneSets.Array.data[2].SceneNameList.Array.data[0]
+      value: ToScene
+      objectReference: {fileID: 0}
     - target: {fileID: 395542625284907153, guid: 980bd3c8fc2e56044b00795ad40fc326, type: 3}
       propertyPath: m_RootOrder
       value: 0

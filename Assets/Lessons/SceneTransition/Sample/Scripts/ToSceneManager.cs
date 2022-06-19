@@ -9,7 +9,7 @@ public class ToSceneManager : MonoBehaviour
 
         if (shareData != null)
         {
-            Debug.Log(shareData.Message);
+            Debug.Log(shareData.Status.MP);
         }
     }
 
@@ -17,7 +17,7 @@ public class ToSceneManager : MonoBehaviour
     {
         if (Input.GetKeyDown(KeyCode.Space))
         {
-            SceneManager.Instance.LoadStage(StageType.Title, new MyShareData("Hello, FromScene!"));
+            SceneManager.Instance.LoadStage(StageType.Title, new MyShareData(null, new Vector3()));
         }
     }
 }

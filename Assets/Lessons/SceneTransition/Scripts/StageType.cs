@@ -4,6 +4,9 @@ namespace Ulma
     {
         Title,
         Game,
+        Game1,
+        Game2,
+        Result,
         //‚İ‚½‚¢‚ÈŠ´‚¶‚Å‘‚â‚µ‚Ä
     }
 }
